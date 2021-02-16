@@ -1,6 +1,7 @@
 {
   "name": "rick-morty-front-end-test",
   "version": "0.1.0",
+  "homepage": "https://aderbalfilho.github.io/rick-morty-front-end-test",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -15,16 +16,27 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "predeploy": "react-app-rewired build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/__mocks__/fileMock.js",
+      "@components(.*)$": "<rootDir>/src/components/$1",
+      "@services(.*)$": "<rootDir>/src/services/$1",
+      "@ui(.*)$": "<rootDir>/src/components/ui/$1"
+    }
   },
   "browserslist": {
     "production": [
