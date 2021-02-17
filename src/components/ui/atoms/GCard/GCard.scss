@@ -1,0 +1,50 @@
+@import 'styles/mixins';
+
+.g-card {
+  color: var(--color-white);
+}
+
+.g-card--normal {
+  @include base-card;
+
+  width: 100%;
+
+  @media (min-width: 768px) {
+    height: 224px;
+    width: 224px;
+  }
+}
+
+.g-card--loading {
+  @include base-card;
+
+  height: 187px;
+  width: 187px;
+}
+
+.g-card--sheet {
+  background-color: var(--background-color-card);
+  border: 1px solid var(--color-light-black);
+  border-radius: var(--radius-large);
+  filter: var(--filter);
+  margin: 0 12px;
+  width: calc(100% - 24px);
+
+  @media (min-width: 1440px) {
+    height: 799px;
+    margin: 0 auto;
+    width: 1034px;
+  }
+}
+
+.g-card--img-sheet {
+  @include base-card;
+
+  box-shadow: var(--shadow);
+  height: 56%;
+
+  @media (min-width: 1440px) {
+    height: 653px;
+    width: 401px;
+  }
+}
