@@ -1,0 +1,50 @@
+@import 'styles/mixins';
+
+.g-title {
+  @include base-text;
+}
+
+// Color
+.g-title--darkest-grey {
+  color: var(--color-darkest-grey);
+}
+
+.g-title--light-grey {
+  color: var(--color-light-grey);
+}
+
+.g-title--lime-green {
+  color: var(--color-lime-green);
+}
+
+.g-title--white {
+  color: var(--color-white);
+}
+
+// Family
+.g-title--nunito {
+  font-family: 'Nunito';
+}
+
+.g-title--seravek {
+  font-family: 'Seravek';
+}
+
+// Spacing
+
+.g-title--space-normal {
+  letter-spacing: normal;
+}
+
+.g-title--space-large {
+  letter-spacing: 0.65em;
+}
+
+// Weight
+.g-title--normal {
+  font-weight: normal;
+}
+
+.g-title--bold {
+  font-weight: bold;
+}

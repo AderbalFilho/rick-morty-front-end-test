@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GTitle change tag renders h1 1`] = `
+<h1
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h1>
+`;
+
+exports[`GTitle change tag renders h1 when no tag is passed 1`] = `
+<h1
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h1>
+`;
+
+exports[`GTitle change tag renders h2 1`] = `
+<h2
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h2>
+`;
+
+exports[`GTitle change tag renders h3 1`] = `
+<h3
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h3>
+`;
+
+exports[`GTitle change tag renders h4 1`] = `
+<h4
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h4>
+`;
+
+exports[`GTitle change tag renders h5 1`] = `
+<h5
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h5>
+`;
+
+exports[`GTitle change tag renders h6 1`] = `
+<h6
+  className="g-title g-title--white g-title--nunito g-title--space-normal g-title--normal"
+>
+  inGaia
+</h6>
+`;
