@@ -2,6 +2,9 @@
 
 .g-title {
   @include base-text;
+
+  margin: 0;
+  padding: 0;
 }
 
 // Color

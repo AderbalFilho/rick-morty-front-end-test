@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GText matches snapshot 1`] = `
+<p
+  className="g-text g-text--white g-text--nunito"
+>
+  inGaia
+</p>
+`;

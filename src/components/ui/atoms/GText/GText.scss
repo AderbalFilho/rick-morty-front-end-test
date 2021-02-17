@@ -1,0 +1,30 @@
+@import 'styles/mixins';
+
+.g-text {
+  @include base-text;
+
+  margin: 0;
+  padding: 0;
+}
+
+// Color
+.g-text--darkest-grey {
+  color: var(--color-darkest-grey);
+}
+
+.g-text--light-grey {
+  color: var(--color-light-grey);
+}
+
+.g-text--white {
+  color: var(--color-white);
+}
+
+// Family
+.g-text--nunito {
+  font-family: 'Nunito';
+}
+
+.g-text--seravek {
+  font-family: 'Seravek';
+}
