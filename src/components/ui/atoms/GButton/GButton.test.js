@@ -14,17 +14,17 @@ describe('GButton', () => {
 
   it('renders children', () => {
     const { container } = render(<GButton>inGaia</GButton>);
-    const card = container.querySelector('.g-button');
+    const button = container.querySelector('.g-button');
 
-    expect(card.textContent).toBe('inGaia');
+    expect(button.textContent).toBe('inGaia');
   });
 
   it('renders classes', () => {
     const { container } = render(
       <GButton classes="button-search">inGaia</GButton>
     );
-    const card = container.querySelector('.g-button');
+    const button = container.querySelector('.g-button');
 
-    expect(card.classList).toContain('button-search');
+    expect(button.classList).toContain('button-search');
   });
 });
