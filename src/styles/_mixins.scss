@@ -1,0 +1,117 @@
+// Text
+@mixin base-text {
+  color: var(--color-white);
+  font-family: 'Nunito';
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.375rem;
+}
+
+// %text-placeholder {
+//   @include base-text;
+
+//   font-weight: bold;
+//   color: var(--color-dark-grey);
+// }
+
+// %text-loading {
+//   @include base-text;
+
+//   font-size: 1.125rem;
+//   line-height: 1.5625rem;
+// }
+
+// %text-loading-desktop {
+//   @include base-text;
+
+//   font-size: 1.5rem;
+//   line-height: 2.0625rem;
+// }
+
+// %text-card-title {
+//   @include base-text;
+
+//   font-family: 'Seravek';
+//   font-size: 1.25rem;
+//   font-weight: bold;
+//   line-height: 1.5625rem;
+// }
+
+// %text-card-subtitle {
+//   @include base-text;
+
+//   font-family: 'Seravek';
+//   font-size: 0.75rem;
+//   line-height: 0.9375rem;
+// }
+
+// %text-section-title {
+//   @include base-text;
+
+//   color: var(--color-lime-green);
+//   font-size: 0.8125rem;
+//   letter-spacing: 0.65em;
+//   line-height: 1.125rem;
+// }
+
+// %text-about {
+//   @include base-text;
+
+//   color: var(--color-light-grey);
+// }
+
+// %text-planet {
+//   @include base-text;
+
+//   font-size: 0.75rem;
+//   line-height: 1rem;
+//   color: var(--color-darkest-grey);
+// }
+
+// %text-planet-desktop {
+//   @include base-text;
+
+//   font-size: 0.875rem;
+//   line-height: 1.1875rem;
+//   color: var(--color-darkest-grey);
+// }
+
+// %text-planet-name {
+//   @include base-text;
+
+//   font-size: 1.25rem;
+// }
+
+// %text-planet-name-desktop {
+//   @include base-text;
+
+//   font-size: 1.75rem;
+//   line-height: 2.375rem;
+// }
+
+// %text-dimension {
+//   @include base-text;
+
+//   color: var(--color-light-grey);
+// }
+
+// %text-dimension-desktop {
+//   @include base-text;
+
+//   font-size: 1.125rem;
+//   line-height: 1.5625rem;
+//   color: var(--color-light-grey);
+// }
+
+// %text-planet-residents {
+//   @include base-text;
+
+//   @extend %text-planet-desktop;
+// }
+
+// %text-pagination {
+//   @include base-text;
+
+//   font-size: 1.25rem;
+//   line-height: 1.6875rem;
+// }
