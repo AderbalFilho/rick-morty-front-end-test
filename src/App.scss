@@ -1,0 +1,32 @@
+:root {
+  // Colors
+  --color-black: #000;
+  --color-white: #fff;
+  --color-light-grey: #d3d3d3;
+  --color-dark-grey: #9f9f9f;
+  --color-darkest-grey: #8c8c8c;
+  --color-lime-green: #cbd736;
+
+  // Background
+  --background-color: #1e1e1e;
+  --background-effect: linear-gradient(
+    180deg,
+    var(--background-color) 0%,
+    var(--background-color) 100%
+  );
+  --background-color-card: #000000cc;
+  --background-color-card-img: #1b1b1b;
+
+  // Modal
+  --modal-background-color: #00000080;
+
+  // Border
+  --border-color: #606060;
+
+  // Transform
+  --loading-transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  // Radius
+  --radius-medium: 8px;
+  --radius-card: 0px 0px 16px 16px;
+}
