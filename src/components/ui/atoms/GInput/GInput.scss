@@ -1,0 +1,20 @@
+@import 'styles/mixins';
+
+.g-input {
+  @include base-text;
+
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-medium);
+  font-weight: bold;
+  max-width: 196px;
+  padding: 10px 14px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--color-dark-grey);
+  }
+}
