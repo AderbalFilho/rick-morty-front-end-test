@@ -1,0 +1,11 @@
+@import 'styles/mixins';
+
+.g-button {
+  @include base-text;
+
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-medium);
+  font-weight: bold;
+  padding: 10px 16px 10px 17px;
+}

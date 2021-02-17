@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GButton matches snapshot 1`] = `
+<button
+  className="g-button"
+>
+  inGaia
+</button>
+`;
