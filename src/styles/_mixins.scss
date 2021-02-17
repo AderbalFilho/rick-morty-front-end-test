@@ -7,6 +7,13 @@
   line-height: 1.375rem;
 }
 
+// Card
+@mixin base-card {
+  background-color: var(--background-color-card-img);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-medium);
+}
+
 // %text-placeholder {
 //   @include base-text;
 

@@ -2,6 +2,7 @@
   // Colors
   --color-black: #000;
   --color-white: #fff;
+  --color-light-black: #161616;
   --color-light-grey: #d3d3d3;
   --color-dark-grey: #9f9f9f;
   --color-darkest-grey: #8c8c8c;
@@ -28,5 +29,11 @@
 
   // Radius
   --radius-medium: 8px;
-  --radius-card: 0px 0px 16px 16px;
+  --radius-large: 16px;
+
+  // Shadow
+  --shadow: 8px 8px 64px #00000066, 16px 16px 32px #0000004d;
+
+  // Filter
+  --filter: drop-shadow(0 4px 79px var(--color-black));
 }
