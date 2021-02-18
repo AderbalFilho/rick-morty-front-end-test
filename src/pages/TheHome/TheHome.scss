@@ -34,3 +34,13 @@
     padding: 101px 0;
   }
 }
+
+.the-home__pagination-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 73px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 203px;
+  }
+}

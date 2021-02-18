@@ -36,6 +36,7 @@ exports[`TheHome matches snapshot 1`] = `
     <section
       className="the-home__cards"
     />
+    0
   </div>
 </div>
 `;
