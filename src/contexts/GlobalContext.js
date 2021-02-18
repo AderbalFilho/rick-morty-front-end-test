@@ -5,6 +5,7 @@ export const GlobalContext = createContext();
 export const GlobalStorage = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [characters, setCharacters] = useState([]);
+  const [isLoading /*, setIsLoading*/] = useState(false);
 
   function handleSearch() {
     // Do search
@@ -15,7 +16,7 @@ export const GlobalStorage = ({ children }) => {
 
   return (
     <GlobalContext.Provider
-      value={{ searchTerm, setSearchTerm, characters, handleSearch }}
+      value={{ searchTerm, setSearchTerm, characters, handleSearch, isLoading }}
     >
       {children}
     </GlobalContext.Provider>

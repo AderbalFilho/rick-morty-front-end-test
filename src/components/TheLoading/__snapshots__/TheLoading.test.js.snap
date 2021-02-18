@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheLoading matches snapshot 1`] = `
+<div
+  className="the-loading"
+>
+  <img
+    alt="Rick and Morty visiting an alien planet"
+    className="the-loading__img"
+    src=""
+  />
+  <p
+    className="g-text g-text--white g-text--nunito the-loading__text"
+  >
+    Loading
+  </p>
+</div>
+`;
