@@ -17,6 +17,7 @@
     var(--background-color) 100%
   );
   --background-color-card: #000000cc;
+  --background-color-card-text: #000000e6;
   --background-color-card-img: #1b1b1b;
 
   // Modal
@@ -31,6 +32,7 @@
   // Radius
   --radius-medium: 8px;
   --radius-large: 16px;
+  --radius-character-text: 0 0 8px 8px;
 
   // Shadow
   --shadow: 8px 8px 64px #00000066, 16px 16px 32px #0000004d;
@@ -39,4 +41,5 @@
   --filter: drop-shadow(0 4px 79px var(--color-black));
   --filter-blur: blur(10px);
   --filter-blur-desktop: blur(35px);
+  --filter-dead: grayscale(100%);
 }

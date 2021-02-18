@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterCard matches snapshot 1`] = `
+<div
+  className="g-card g-card--normal character-card"
+>
+  <img
+    alt="Rick Sanchez"
+    className="character-card__img"
+    src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+  />
+  <div
+    className="character-card__text-container"
+  >
+    <h1
+      className="g-title g-title--white g-title--seravek g-title--space-normal g-title--bold character-card__title"
+    >
+      Rick Sanchez
+    </h1>
+    <p
+      className="g-text g-text--white g-text--seravek character-card__subtitle"
+    >
+      Human
+    </p>
+  </div>
+</div>
+`;
