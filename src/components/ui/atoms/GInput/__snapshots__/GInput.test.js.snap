@@ -4,5 +4,6 @@ exports[`GInput matches snapshot 1`] = `
 <input
   className="g-input"
   onChange={[Function]}
+  onKeyPress={[Function]}
 />
 `;

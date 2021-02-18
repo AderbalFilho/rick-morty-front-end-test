@@ -15,6 +15,7 @@ exports[`SearchSection matches snapshot 1`] = `
     <input
       className="g-input"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="Search characters"
       type="text"
       value=""

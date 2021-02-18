@@ -5,7 +5,8 @@ import CharacterService from '@services/character';
 export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
-  const [page /*, setPage */] = useState(1);
+  // eslint-disable-next-line no-unused-vars
+  const [page, setPage] = useState(1);
   const [paginationPage, setPaginationPage] = useState(1);
   const [maxPage, setMaxPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,7 +14,9 @@ export const GlobalStorage = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   function handleSearch() {
-    search(page);
+    search(1);
+    setPage(1);
+    setPaginationPage(1);
   }
 
   function handlePagination(pageFromPagination) {
