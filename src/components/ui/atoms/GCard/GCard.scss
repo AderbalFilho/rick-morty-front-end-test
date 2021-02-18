@@ -7,7 +7,13 @@
 .g-card--normal {
   @include base-card;
 
+  cursor: pointer;
   width: 100%;
+
+  &:hover {
+    border: 2px solid var(--color-lime-green);
+    box-shadow: var(--shadow-card-normal);
+  }
 
   @media (min-width: 768px) {
     height: 224px;
