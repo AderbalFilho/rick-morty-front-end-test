@@ -1,0 +1,27 @@
+.g-pagination {
+  color: var(--color-white);
+  margin: 0 auto;
+}
+
+.pagination__icon {
+  cursor: pointer;
+}
+
+.pagination__icon-disabled {
+  color: var(--border-color);
+}
+
+.pagination__number {
+  color: var(--border-color);
+  cursor: pointer;
+  margin-left: 48px;
+
+  &:last-of-type {
+    margin-right: 48px;
+  }
+}
+
+.pagination__number--active {
+  color: var(--color-lime-green);
+  cursor: unset;
+}
