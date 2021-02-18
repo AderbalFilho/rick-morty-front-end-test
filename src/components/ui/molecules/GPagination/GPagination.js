@@ -20,24 +20,28 @@ function GPagination({ children, classes, ...rest }) {
 
   useEffect(
     () => {
-      const numbersArray = [];
-      let minNumber = paginationPage - 2;
-      let maxNumber = paginationPage + 2;
+      if (window.innerWidth < 768) {
+        setPageNumbers([paginationPage]);
+      } else {
+        const numbersArray = [];
+        let minNumber = paginationPage - 2;
+        let maxNumber = paginationPage + 2;
 
-      if (minNumber < 1) {
-        maxNumber += 1 - minNumber;
-        minNumber = 1;
+        if (minNumber < 1) {
+          maxNumber += 1 - minNumber;
+          minNumber = 1;
+        }
+
+        if (maxNumber > maxPage) {
+          maxNumber = maxPage;
+        }
+
+        for (let i = minNumber; i <= maxNumber; i++) {
+          numbersArray.push(i);
+        }
+
+        setPageNumbers(numbersArray);
       }
-
-      if (maxNumber > maxPage) {
-        maxNumber = maxPage;
-      }
-
-      for (let i = minNumber; i <= maxNumber; i++) {
-        numbersArray.push(i);
-      }
-
-      setPageNumbers(numbersArray);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [paginationPage, maxPage]
