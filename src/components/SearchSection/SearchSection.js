@@ -23,6 +23,7 @@ function SearchSection() {
           placeholder="Search characters"
           value={searchTerm}
           change={({ target }) => setSearchTerm(target.value)}
+          onEnter={handleSearch}
         />
         <GButton classes="search-section__button" onClick={handleSearch}>
           Search
