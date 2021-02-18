@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/rick-morty-front-end-test/static/css/main.7baab300.chunk.css",
-    "main.js": "/rick-morty-front-end-test/static/js/main.119569e1.chunk.js",
-    "main.js.map": "/rick-morty-front-end-test/static/js/main.119569e1.chunk.js.map",
-    "runtime-main.js": "/rick-morty-front-end-test/static/js/runtime-main.f9bf57f9.js",
-    "runtime-main.js.map": "/rick-morty-front-end-test/static/js/runtime-main.f9bf57f9.js.map",
-    "static/js/2.f31af174.chunk.js": "/rick-morty-front-end-test/static/js/2.f31af174.chunk.js",
-    "static/js/2.f31af174.chunk.js.map": "/rick-morty-front-end-test/static/js/2.f31af174.chunk.js.map",
-    "static/js/3.224a3417.chunk.js": "/rick-morty-front-end-test/static/js/3.224a3417.chunk.js",
-    "static/js/3.224a3417.chunk.js.map": "/rick-morty-front-end-test/static/js/3.224a3417.chunk.js.map",
+    "main.css": "/rick-morty-front-end-test/static/css/main.e2cc482d.chunk.css",
+    "main.js": "/rick-morty-front-end-test/static/js/main.b6b740ee.chunk.js",
+    "main.js.map": "/rick-morty-front-end-test/static/js/main.b6b740ee.chunk.js.map",
+    "runtime-main.js": "/rick-morty-front-end-test/static/js/runtime-main.82c113cc.js",
+    "runtime-main.js.map": "/rick-morty-front-end-test/static/js/runtime-main.82c113cc.js.map",
+    "static/js/2.4a7077c4.chunk.js": "/rick-morty-front-end-test/static/js/2.4a7077c4.chunk.js",
+    "static/js/2.4a7077c4.chunk.js.map": "/rick-morty-front-end-test/static/js/2.4a7077c4.chunk.js.map",
+    "static/js/3.2e66eb3b.chunk.js": "/rick-morty-front-end-test/static/js/3.2e66eb3b.chunk.js",
+    "static/js/3.2e66eb3b.chunk.js.map": "/rick-morty-front-end-test/static/js/3.2e66eb3b.chunk.js.map",
     "index.html": "/rick-morty-front-end-test/index.html",
-    "static/css/main.7baab300.chunk.css.map": "/rick-morty-front-end-test/static/css/main.7baab300.chunk.css.map",
-    "static/js/2.f31af174.chunk.js.LICENSE.txt": "/rick-morty-front-end-test/static/js/2.f31af174.chunk.js.LICENSE.txt"
+    "static/css/main.e2cc482d.chunk.css.map": "/rick-morty-front-end-test/static/css/main.e2cc482d.chunk.css.map",
+    "static/js/2.4a7077c4.chunk.js.LICENSE.txt": "/rick-morty-front-end-test/static/js/2.4a7077c4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9bf57f9.js",
-    "static/js/2.f31af174.chunk.js",
-    "static/css/main.7baab300.chunk.css",
-    "static/js/main.119569e1.chunk.js"
+    "static/js/runtime-main.82c113cc.js",
+    "static/js/2.4a7077c4.chunk.js",
+    "static/css/main.e2cc482d.chunk.css",
+    "static/js/main.b6b740ee.chunk.js"
   ]
 }
