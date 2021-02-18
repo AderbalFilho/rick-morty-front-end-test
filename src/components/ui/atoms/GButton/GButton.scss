@@ -8,4 +8,8 @@
   border-radius: var(--radius-medium);
   font-weight: bold;
   padding: 10px 16px 10px 17px;
+
+  &:focus {
+    outline: none;
+  }
 }
