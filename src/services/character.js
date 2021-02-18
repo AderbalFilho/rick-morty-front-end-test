@@ -10,6 +10,7 @@ class Character {
               pages
             }
             results {
+              id,
               name,
               status,
               species,
