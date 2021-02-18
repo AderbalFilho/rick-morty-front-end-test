@@ -1,7 +1,7 @@
 .the-home {
   background: var(--background-effect);
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .the-home__img-background {
@@ -9,4 +9,14 @@
   background-repeat: repeat-x;
   background-position: center;
   height: 900px;
+}
+
+.the-home--blur {
+  filter: var(--filter-blur);
+  overflow: hidden;
+  position: fixed;
+
+  @media (min-width: 768px) {
+    filter: var(--filter-blur-desktop);
+  }
 }

@@ -37,4 +37,6 @@
 
   // Filter
   --filter: drop-shadow(0 4px 79px var(--color-black));
+  --filter-blur: blur(10px);
+  --filter-blur-desktop: blur(35px);
 }
