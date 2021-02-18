@@ -6,18 +6,31 @@ export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
   const [page /*, setPage */] = useState(1);
+  const [paginationPage, setPaginationPage] = useState(1);
+  const [maxPage, setMaxPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   function handleSearch() {
+    search(page);
+  }
+
+  function handlePagination(pageFromPagination) {
+    setPaginationPage(pageFromPagination);
+
+    search(pageFromPagination);
+  }
+
+  function search(pageToSearch) {
     setIsLoading(true);
 
-    CharacterService.getCharacters(page, searchTerm)
+    CharacterService.getCharacters(pageToSearch, searchTerm)
       .then(({ data }) => {
-        const { /*info,*/ results } = data.data.characters;
+        const { info, results } = data.data.characters;
 
         setCharacters(results);
+        setMaxPage(info.pages);
         setIsLoading(false);
       })
       .catch((err) => {
@@ -26,11 +39,18 @@ export const GlobalStorage = ({ children }) => {
       });
   }
 
+  const value = {
+    characters,
+    handleSearch,
+    handlePagination,
+    isLoading,
+    maxPage,
+    paginationPage,
+    searchTerm,
+    setSearchTerm,
+  };
+
   return (
-    <GlobalContext.Provider
-      value={{ searchTerm, setSearchTerm, characters, handleSearch, isLoading }}
-    >
-      {children}
-    </GlobalContext.Provider>
+    <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>
   );
 };

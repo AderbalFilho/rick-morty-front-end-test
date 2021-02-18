@@ -7,5 +7,6 @@ import GTitle from './atoms/GTitle';
 
 // Molecules
 import GModal from './molecules/GModal';
+import GPagination from './molecules/GPagination';
 
-export { GButton, GCard, GInput, GModal, GText, GTitle };
+export { GButton, GCard, GInput, GModal, GPagination, GText, GTitle };

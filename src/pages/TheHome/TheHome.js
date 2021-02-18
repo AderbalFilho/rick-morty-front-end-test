@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import SearchSection from '@components/SearchSection';
 import TheLoading from '@components/TheLoading';
 import CharacterCard from '@components/CharacterCard';
+import { GPagination } from '@ui';
 import { GlobalContext } from '@contexts/GlobalContext';
 
 import './TheHome.scss';
@@ -23,6 +24,11 @@ function TheHome() {
               <CharacterCard key={character.id} character={character} />
             ))}
           </section>
+          {characters.length && (
+            <section className="the-home__pagination-section">
+              <GPagination />
+            </section>
+          )}
         </div>
       </div>
     </>
