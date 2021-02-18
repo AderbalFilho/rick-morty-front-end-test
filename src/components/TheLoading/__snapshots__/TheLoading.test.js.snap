@@ -2,7 +2,7 @@
 
 exports[`TheLoading matches snapshot 1`] = `
 <div
-  className="the-loading"
+  className="g-modal"
 >
   <img
     alt="Rick and Morty visiting an alien planet"
