@@ -7,7 +7,7 @@ import logo from '@assets/imgs/logo.png';
 
 import './SearchSection.scss';
 
-const SearchSection = () => {
+function SearchSection() {
   const { searchTerm, setSearchTerm, handleSearch } = useContext(GlobalContext);
 
   return (
@@ -30,6 +30,6 @@ const SearchSection = () => {
       </div>
     </section>
   );
-};
+}
 
 export default SearchSection;

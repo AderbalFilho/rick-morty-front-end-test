@@ -1,22 +1,22 @@
 import React from 'react';
 
-import { GText } from '@ui';
+import { GModal, GText } from '@ui';
 
 import loading from '@assets/imgs/loading.png';
 
 import './TheLoading.scss';
 
-const TheLoading = () => {
+function TheLoading() {
   return (
-    <div className="the-loading">
+    <GModal>
       <img
         src={loading}
         alt="Rick and Morty visiting an alien planet"
         className="the-loading__img"
       />
       <GText classes="the-loading__text">Loading</GText>
-    </div>
+    </GModal>
   );
-};
+}
 
 export default TheLoading;
