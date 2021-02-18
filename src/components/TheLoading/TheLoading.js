@@ -8,7 +8,7 @@ import './TheLoading.scss';
 
 function TheLoading() {
   return (
-    <GModal className="the-loading">
+    <GModal>
       <img
         src={loading}
         alt="Rick and Morty visiting an alien planet"

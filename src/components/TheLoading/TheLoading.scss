@@ -1,18 +1,5 @@
 @import 'styles/mixins';
 
-.the-loading {
-  align-items: center;
-  background-color: var(--modal-background-color);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  min-width: 100%;
-  overflow-y: hidden;
-  position: fixed;
-  z-index: 1;
-}
-
 .the-loading__img {
   @include base-card;
 
