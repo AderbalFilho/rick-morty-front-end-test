@@ -1,0 +1,33 @@
+@import 'styles/mixins';
+
+.the-loading {
+  align-items: center;
+  background-color: var(--modal-background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-width: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 1;
+}
+
+.the-loading__img {
+  @include base-card;
+
+  height: 185px;
+  transform: var(--loading-transform);
+  width: 185px;
+}
+
+.the-loading__text {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-top: 36px;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+  }
+}
