@@ -1,17 +1,29 @@
 import React, { createContext, useState } from 'react';
 
+import CharacterService from '@services/character';
+
 export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
+  const [page /*, setPage */] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [characters, setCharacters] = useState([]);
-  const [isLoading /*, setIsLoading*/] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleSearch() {
-    // Do search
-    setCharacters([
-      /* result */
-    ]);
+    setIsLoading(true);
+
+    CharacterService.getCharacters(page, searchTerm)
+      .then(({ data }) => {
+        const { /*info,*/ results } = data.data.characters;
+
+        setCharacters(results);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsLoading(false);
+      });
   }
 
   return (

@@ -33,6 +33,9 @@ exports[`TheHome matches snapshot 1`] = `
         </button>
       </div>
     </section>
+    <section
+      className="the-home__cards"
+    />
   </div>
 </div>
 `;

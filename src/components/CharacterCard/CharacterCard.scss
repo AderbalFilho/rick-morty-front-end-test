@@ -1,0 +1,35 @@
+.character-card {
+  position: relative;
+}
+
+.character-card__img {
+  border-radius: var(--radius-medium);
+  width: 220px;
+}
+
+.character-card__img--dead {
+  filter: var(--filter-dead);
+}
+
+.character-card__text-container {
+  background-color: var(--background-color-card-text);
+  border-radius: var(--radius-character-text);
+  bottom: 0;
+  height: 55px;
+  padding: 7px 12px;
+  position: absolute;
+  width: 100%;
+}
+
+.character-card__title {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-card__subtitle {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+}
