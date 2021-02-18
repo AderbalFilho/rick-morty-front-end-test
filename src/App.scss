@@ -10,9 +10,10 @@
 
   // Background
   --background-color: #1e1e1e;
+  --background-color-opac-zero: #1e1e1e00;
   --background-effect: linear-gradient(
     180deg,
-    var(--background-color) 0%,
+    var(--background-color-opac-zero) 0%,
     var(--background-color) 100%
   );
   --background-color-card: #000000cc;

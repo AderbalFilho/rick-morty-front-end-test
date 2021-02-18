@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchSection matches snapshot 1`] = `
+<section
+  className="search-section"
+>
+  <img
+    alt="Rick and Morty logo"
+    className="search-section__logo"
+    src=""
+  />
+  <div
+    className="search-section__input-container"
+  >
+    <input
+      className="g-input"
+      onChange={[Function]}
+      placeholder="Search characters"
+      type="text"
+      value=""
+    />
+    <button
+      className="g-button search-section__button"
+      onClick={[Function]}
+    >
+      Search
+    </button>
+  </div>
+</section>
+`;

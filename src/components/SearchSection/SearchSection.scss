@@ -1,0 +1,28 @@
+.search-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section__logo {
+  margin: 19px 40px 47px;
+  max-width: 502px;
+  width: calc(100% - 80px);
+
+  @media (min-width: 768px) {
+    margin: 38px 0 74px;
+    width: 100%;
+  }
+}
+
+.search-section__input-container {
+  display: flex;
+}
+
+.search-section__button {
+  margin-left: 8px;
+
+  @media (min-width: 768px) {
+    margin-left: 16px;
+  }
+}

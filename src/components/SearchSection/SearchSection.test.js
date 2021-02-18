@@ -1,14 +1,14 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
-import TheHome from './TheHome';
+import SearchSection from './SearchSection';
 import { GlobalStorage } from '@contexts/GlobalContext';
 
-describe('TheHome', () => {
+describe('SearchSection', () => {
   it('matches snapshot', () => {
     const testRenderer = TestRenderer.create(
       <GlobalStorage>
-        <TheHome />
+        <SearchSection />
       </GlobalStorage>
     );
     const jsonComponent = testRenderer.toJSON();
