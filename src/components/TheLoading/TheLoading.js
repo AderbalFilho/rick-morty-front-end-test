@@ -6,7 +6,7 @@ import loading from '@assets/imgs/loading.png';
 
 import './TheLoading.scss';
 
-const TheLoading = () => {
+function TheLoading() {
   return (
     <div className="the-loading">
       <img
@@ -17,6 +17,6 @@ const TheLoading = () => {
       <GText classes="the-loading__text">Loading</GText>
     </div>
   );
-};
+}
 
 export default TheLoading;
