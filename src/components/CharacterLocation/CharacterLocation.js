@@ -53,9 +53,10 @@ function CharacterLocation({ location }) {
 
 CharacterLocation.propTypes = {
   location: PropTypes.shape({
-    type: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    dimension: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    name: PropTypes.string,
+    dimension: PropTypes.string,
+    residents: PropTypes.array,
   }).isRequired,
 };
 
