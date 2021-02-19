@@ -1,3 +1,5 @@
+@import 'styles/mixins';
+
 .g-pagination {
   color: var(--color-white);
   margin: 0 auto;
@@ -5,15 +7,22 @@
 
 .pagination__icon {
   cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
 }
 
-.pagination__icon-disabled {
+.pagination__icon--disabled {
   color: var(--border-color);
+  cursor: unset;
 }
 
 .pagination__number {
+  @include base-text;
+
   color: var(--border-color);
   cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   margin-left: 48px;
 
   &:last-of-type {
