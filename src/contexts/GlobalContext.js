@@ -12,6 +12,7 @@ export const GlobalStorage = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [modalCharacter, setModalCharacter] = useState(null);
 
   function handleSearch() {
     search(1);
@@ -48,8 +49,10 @@ export const GlobalStorage = ({ children }) => {
     handlePagination,
     isLoading,
     maxPage,
+    modalCharacter,
     paginationPage,
     searchTerm,
+    setModalCharacter,
     setSearchTerm,
   };
 

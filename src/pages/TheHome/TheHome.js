@@ -4,18 +4,26 @@ import classNames from 'classnames/bind';
 import SearchSection from '@components/SearchSection';
 import TheLoading from '@components/TheLoading';
 import CharacterCard from '@components/CharacterCard';
+import CharacterSheet from '@components/CharacterSheet';
+import CharacterSheetMobile from '@components/CharacterSheetMobile';
 import { GPagination } from '@ui';
 import { GlobalContext } from '@contexts/GlobalContext';
 
 import './TheHome.scss';
 
 function TheHome() {
-  const { characters, isLoading } = useContext(GlobalContext);
+  const { characters, isLoading, modalCharacter } = useContext(GlobalContext);
   const className = classNames('the-home', isLoading && ' the-home--blur');
 
   return (
     <>
       {isLoading && <TheLoading />}
+      {modalCharacter &&
+        (window.innerWidth < 1440 ? (
+          <CharacterSheetMobile />
+        ) : (
+          <CharacterSheet />
+        ))}
       <div className={className}>
         <div className="the-home__img-background">
           <SearchSection />
