@@ -1,0 +1,119 @@
+.character-sheet__card {
+  position: relative;
+}
+
+.character-sheet__image-blurred-container {
+  border-radius: var(--radius-large);
+  height: 100%;
+  overflow: hidden;
+}
+
+.character-sheet__image-blurred {
+  filter: blur(50px);
+  height: 795px;
+  opacity: 0.6;
+  width: 441px;
+}
+
+.character-sheet__close {
+  left: 21px;
+  position: absolute;
+  top: 21px;
+}
+
+.character-sheet__sheet-img-container {
+  left: -70px;
+  position: absolute;
+  top: 84px;
+}
+
+.character-sheet__sheet-img {
+  border-radius: var(--radius-character-sheet-img);
+  height: 598px;
+  width: 100%;
+}
+
+.character-sheet__text-container {
+  margin: 0 12px;
+}
+
+.character-sheet__text-container-title {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-sheet__text-container-subtitle {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+}
+
+.character-sheet__info-content {
+  background-color: var(--color-black);
+  border-radius: 0 16px 16px 0;
+  height: 795px;
+  padding: 72px 75px 72px 71px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 645px;
+}
+
+.info-content__title {
+  text-transform: uppercase;
+}
+
+.info-content__title--origin {
+  margin-top: 63px;
+}
+
+.info-content__title--location {
+  margin-top: 56px;
+}
+
+.info-content__about-text {
+  color: var(--color-light-grey);
+  margin-top: 9px;
+}
+
+.info-content__title-planet {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 17px;
+
+  @media (min-width: 1440px) {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+}
+
+.info-content__title-planet-name {
+  font-size: 1.25rem;
+
+  @media (min-width: 1440px) {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+}
+
+.info-content__title-planet-dimension {
+  @media (min-width: 1440px) {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+}
+
+.info-content__residents {
+  align-items: center;
+  color: var(--color-darkest-grey);
+  display: flex;
+  margin-top: 12px;
+}
+
+.info-content__residents-text {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  margin-left: 11px;
+}

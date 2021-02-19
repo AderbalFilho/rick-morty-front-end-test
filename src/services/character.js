@@ -14,6 +14,7 @@ class Character {
               name,
               status,
               species,
+              gender,
               image,
               origin {
                 name,
@@ -30,6 +31,9 @@ class Character {
                 residents {
                   id
                 }
+              },
+              episode {
+                air_date
               }
             }
           }
