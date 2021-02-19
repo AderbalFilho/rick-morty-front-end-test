@@ -5,6 +5,7 @@ import SearchSection from '@components/SearchSection';
 import TheLoading from '@components/TheLoading';
 import CharacterCard from '@components/CharacterCard';
 import CharacterSheet from '@components/CharacterSheet';
+import CharacterSheetMobile from '@components/CharacterSheetMobile';
 import { GPagination } from '@ui';
 import { GlobalContext } from '@contexts/GlobalContext';
 
@@ -17,7 +18,12 @@ function TheHome() {
   return (
     <>
       {isLoading && <TheLoading />}
-      {modalCharacter && <CharacterSheet />}
+      {modalCharacter &&
+        (window.innerWidth < 1440 ? (
+          <CharacterSheetMobile />
+        ) : (
+          <CharacterSheet />
+        ))}
       <div className={className}>
         <div className="the-home__img-background">
           <SearchSection />
