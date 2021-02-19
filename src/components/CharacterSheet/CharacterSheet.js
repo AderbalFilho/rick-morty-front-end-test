@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
 
 import { GButton, GCard, GModal, GText, GTitle } from '@ui';
+import CharacterLocation from '@components/CharacterLocation';
 import { GlobalContext } from '@contexts/GlobalContext';
 
 import './CharacterSheet.scss';
@@ -82,32 +81,7 @@ function CharacterSheet() {
           >
             Origin
           </GTitle>
-          <GTitle
-            tag="h2"
-            color="darkest-grey"
-            classes="info-content__title-planet"
-          >
-            {modalCharacter.origin.type}
-          </GTitle>
-          <GTitle tag="h3" classes="info-content__title-planet-name">
-            {modalCharacter.origin.name}
-          </GTitle>
-          <GTitle
-            tag="h4"
-            color="light-grey"
-            classes="info-content__title-planet-dimension"
-          >
-            {modalCharacter.origin.dimension}
-          </GTitle>
-          <div className="info-content__residents">
-            <FontAwesomeIcon icon={faUserFriends} />
-            <GText color="darkest-grey" classes="info-content__residents-text">
-              {(modalCharacter.origin.residents &&
-                modalCharacter.origin.residents.length) ||
-                'unknow'}{' '}
-              residents
-            </GText>
-          </div>
+          <CharacterLocation location={modalCharacter.origin} />
           <GTitle
             color="lime-green"
             spacing="large"
@@ -115,32 +89,7 @@ function CharacterSheet() {
           >
             Location
           </GTitle>
-          <GTitle
-            tag="h2"
-            color="darkest-grey"
-            classes="info-content__title-planet"
-          >
-            {modalCharacter.location.type}
-          </GTitle>
-          <GTitle tag="h3" classes="info-content__title-planet-name">
-            {modalCharacter.location.name}
-          </GTitle>
-          <GTitle
-            tag="h4"
-            color="light-grey"
-            classes="info-content__title-planet-dimension"
-          >
-            {modalCharacter.location.dimension}
-          </GTitle>
-          <div className="info-content__residents">
-            <FontAwesomeIcon icon={faUserFriends} />
-            <GText color="darkest-grey" classes="info-content__residents-text">
-              {(modalCharacter.location.residents &&
-                modalCharacter.location.residents.length) ||
-                'unknow'}{' '}
-              residents
-            </GText>
-          </div>
+          <CharacterLocation location={modalCharacter.location} />
         </div>
       </GCard>
     </GModal>

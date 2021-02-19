@@ -1,0 +1,39 @@
+.character-location__title-planet {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 17px;
+
+  @media (min-width: 1440px) {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+}
+
+.character-location__title-planet-name {
+  font-size: 1.25rem;
+
+  @media (min-width: 1440px) {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+}
+
+.character-location__title-planet-dimension {
+  @media (min-width: 1440px) {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+}
+
+.character-location__residents {
+  align-items: center;
+  color: var(--color-darkest-grey);
+  display: flex;
+  margin-top: 12px;
+}
+
+.character-location__residents-text {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  margin-left: 11px;
+}
