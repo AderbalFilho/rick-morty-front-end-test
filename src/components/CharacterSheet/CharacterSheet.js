@@ -102,7 +102,10 @@ function CharacterSheet() {
           <div className="info-content__residents">
             <FontAwesomeIcon icon={faUserFriends} />
             <GText color="darkest-grey" classes="info-content__residents-text">
-              {modalCharacter.origin.residents.length} residents
+              {(modalCharacter.origin.residents &&
+                modalCharacter.origin.residents.length) ||
+                'unknow'}{' '}
+              residents
             </GText>
           </div>
           <GTitle
@@ -132,7 +135,10 @@ function CharacterSheet() {
           <div className="info-content__residents">
             <FontAwesomeIcon icon={faUserFriends} />
             <GText color="darkest-grey" classes="info-content__residents-text">
-              {modalCharacter.location.residents.length} residents
+              {(modalCharacter.location.residents &&
+                modalCharacter.location.residents.length) ||
+                'unknow'}{' '}
+              residents
             </GText>
           </div>
         </div>
