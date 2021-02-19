@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import { GButton, GCard, GModal, GText, GTitle } from '@ui';
-import CharacterLocation from '@components/CharacterLocation';
+import CharacterInfo from '@components/CharacterInfo';
 import { GlobalContext } from '@contexts/GlobalContext';
 
 import './CharacterSheet.scss';
@@ -52,44 +52,7 @@ function CharacterSheet() {
           </div>
         </GCard>
         <div className="character-sheet__info-content">
-          <GTitle
-            color="lime-green"
-            spacing="large"
-            classes="info-content__title"
-          >
-            About
-          </GTitle>
-          <GText classes="info-content__about-text">{`${
-            modalCharacter.name
-          } is a ${modalCharacter.gender.toLowerCase()} ${modalCharacter.species.toLowerCase()}. ${
-            modalCharacter.gender.toLowerCase() === 'male'
-              ? 'He'
-              : modalCharacter.gender.toLowerCase() === 'female'
-              ? 'She'
-              : 'It'
-          } is ${
-            modalCharacter.status === 'Alive'
-              ? `${modalCharacter.status.toLowerCase()} and well`
-              : modalCharacter.status.toLowerCase()
-          }. Last seen in ${
-            modalCharacter.episode[modalCharacter.episode.length - 1].air_date
-          }.`}</GText>
-          <GTitle
-            color="lime-green"
-            spacing="large"
-            classes="info-content__title info-content__title--origin"
-          >
-            Origin
-          </GTitle>
-          <CharacterLocation location={modalCharacter.origin} />
-          <GTitle
-            color="lime-green"
-            spacing="large"
-            classes="info-content__title info-content__title--location"
-          >
-            Location
-          </GTitle>
-          <CharacterLocation location={modalCharacter.location} />
+          <CharacterInfo />
         </div>
       </GCard>
     </GModal>
