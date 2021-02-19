@@ -2,7 +2,8 @@
 
 exports[`CharacterCard matches snapshot 1`] = `
 <div
-  className="g-card g-card--normal character-card"
+  className="g-card g-card--normal character-card undefined"
+  onClick={[Function]}
 >
   <img
     alt="Rick Sanchez"

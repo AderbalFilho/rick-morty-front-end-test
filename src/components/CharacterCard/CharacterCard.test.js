@@ -2,6 +2,7 @@ import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
 import CharacterCard from './CharacterCard';
+import { GlobalStorage } from '@contexts/GlobalContext';
 
 describe('CharacterCard', () => {
   it('matches snapshot', () => {
@@ -12,7 +13,9 @@ describe('CharacterCard', () => {
       status: 'Alive',
     };
     const testRenderer = TestRenderer.create(
-      <CharacterCard character={character} />
+      <GlobalStorage>
+        <CharacterCard character={character} />
+      </GlobalStorage>
     );
     const jsonComponent = testRenderer.toJSON();
 
