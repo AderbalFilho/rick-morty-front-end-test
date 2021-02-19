@@ -12,11 +12,31 @@ import { GlobalContext } from '@contexts/GlobalContext';
 import './GPagination.scss';
 
 function GPagination({ children, classes, ...rest }) {
-  const className = classNames('g-pagination', classes);
   const { maxPage, handlePagination, paginationPage } = useContext(
     GlobalContext
   );
+  const className = classNames('g-pagination', classes);
+  const [classNamePrevious, setClassNamePrevious] = useState('');
+  const [classNameNext, setClassNameNext] = useState('');
   const [pageNumbers, setPageNumbers] = useState([]);
+
+  useEffect(() => {
+    const isFirstPage = paginationPage === 1;
+    const isLastPage = paginationPage === maxPage;
+
+    setClassNamePrevious(
+      classNames(
+        'pagination__icon',
+        isFirstPage && 'pagination__icon pagination__icon--disabled'
+      )
+    );
+    setClassNameNext(
+      classNames(
+        'pagination__icon',
+        isLastPage && 'pagination__icon pagination__icon--disabled'
+      )
+    );
+  }, [paginationPage, maxPage]);
 
   useEffect(
     () => {
@@ -57,31 +77,29 @@ function GPagination({ children, classes, ...rest }) {
     <div className={className} {...rest}>
       <FontAwesomeIcon
         icon={faChevronLeft}
-        className={`${
-          paginationPage === 1
-            ? 'pagination__icon-disabled'
-            : 'pagination__icon'
-        }`}
+        className={classNamePrevious}
         onClick={() => handlePageChange(paginationPage - 1)}
       />
-      {pageNumbers.map((pageNumber) => (
-        <span
-          key={pageNumber}
-          className={`pagination__number${
-            pageNumber === paginationPage ? ' pagination__number--active' : ''
-          }`}
-          onClick={() => handlePageChange(pageNumber)}
-        >
-          {pageNumber}
-        </span>
-      ))}
+      {pageNumbers.map((pageNumber) => {
+        const isActualPage = pageNumber === paginationPage;
+        const classNamePageActive = classNames(
+          'pagination__number',
+          isActualPage && 'pagination__number--active'
+        );
+
+        return (
+          <span
+            key={pageNumber}
+            className={classNamePageActive}
+            onClick={() => handlePageChange(pageNumber)}
+          >
+            {pageNumber}
+          </span>
+        );
+      })}
       <FontAwesomeIcon
         icon={faChevronRight}
-        className={`${
-          paginationPage === maxPage
-            ? 'pagination__icon-disabled'
-            : 'pagination__icon'
-        }`}
+        className={classNameNext}
         onClick={() => handlePageChange(paginationPage + 1)}
       />
     </div>
