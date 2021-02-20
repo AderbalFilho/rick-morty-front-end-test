@@ -11,7 +11,7 @@ function CharacterInfo() {
   const gender = modalCharacter.gender.toLowerCase();
   const species = modalCharacter.species.toLowerCase();
   const status = `${modalCharacter.status.toLowerCase()}${
-    modalCharacter.status === 'Alive' && ' and well'
+    modalCharacter.status === 'Alive' ? ' and well' : ''
   }`;
   const lastSeen =
     modalCharacter.episode[modalCharacter.episode.length - 1].air_date;

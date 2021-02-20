@@ -1,5 +1,39 @@
+.character-sheet {
+  height: 100%;
+  justify-content: flex-start;
+
+  @media (min-width: 1440px) {
+    height: 100vh;
+    justify-content: center;
+  }
+}
+
 .character-sheet__card {
   position: relative;
+  margin-top: 215px;
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+  }
+}
+
+.character-sheet__card-desktop {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.character-sheet__card-mobile {
+  display: block;
+  position: absolute;
+  top: -225px;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .character-sheet__image-blurred-container {
@@ -33,6 +67,10 @@
   width: 100%;
 }
 
+.character-sheet__sheet-img--dead {
+  filter: var(--filter-dead);
+}
+
 .character-sheet__text-container {
   margin: 0 12px;
 }
@@ -50,70 +88,46 @@
   line-height: 0.9375rem;
 }
 
+.character-sheet__times {
+  font-size: 2rem;
+  margin: 37px 0 0 16px;
+}
+
+.character-sheet__card-img-text {
+  height: 173px;
+  margin: 0 auto;
+  width: 178px;
+  z-index: 1;
+}
+
+.character-sheet__card-img {
+  max-height: 169px;
+  max-width: 174px;
+}
+
+.character-sheet__gray-box {
+  background-color: var(--background-color);
+  border-radius: var(--radius-grey-box);
+  height: 70px;
+  margin-top: -90px;
+}
+
 .character-sheet__info-content {
   background-color: var(--color-black);
-  border-radius: 0 16px 16px 0;
-  height: 795px;
-  padding: 72px 75px 72px 71px;
+  border-radius: var(--radius-info-mobile);
+  max-height: calc(100vh - 231px);
+  overflow-y: scroll;
+  padding: 59px 21px 21px;
   position: absolute;
   right: 0;
   top: 0;
-  width: 645px;
-}
-
-.info-content__title {
-  text-transform: uppercase;
-}
-
-.info-content__title--origin {
-  margin-top: 63px;
-}
-
-.info-content__title--location {
-  margin-top: 56px;
-}
-
-.info-content__about-text {
-  color: var(--color-light-grey);
-  margin-top: 9px;
-}
-
-.info-content__title-planet {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  margin-top: 17px;
+  width: 100%;
 
   @media (min-width: 1440px) {
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
+    border-radius: var(--radius-info-desktop);
+    height: 795px;
+    overflow-y: unset;
+    padding: 72px 75px 72px 71px;
+    width: 645px;
   }
-}
-
-.info-content__title-planet-name {
-  font-size: 1.25rem;
-
-  @media (min-width: 1440px) {
-    font-size: 1.75rem;
-    line-height: 2.375rem;
-  }
-}
-
-.info-content__title-planet-dimension {
-  @media (min-width: 1440px) {
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-  }
-}
-
-.info-content__residents {
-  align-items: center;
-  color: var(--color-darkest-grey);
-  display: flex;
-  margin-top: 12px;
-}
-
-.info-content__residents-text {
-  font-size: 0.875rem;
-  line-height: 1.1875rem;
-  margin-left: 11px;
 }
