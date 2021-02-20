@@ -2,6 +2,15 @@
   position: relative;
 }
 
+.character-card--hoverable {
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var(--color-lime-green);
+    box-shadow: var(--shadow-card-normal);
+  }
+}
+
 .character-card__img {
   border-radius: var(--radius-medium);
   width: 220px;
